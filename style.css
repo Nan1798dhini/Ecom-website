@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    width: 100%;
+}
+.logo{
+    width: 5vw;
+    height: 5vh;
+}
+header{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #f69b9b;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    color: #000;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: all .42s ease;
+}
+.menu a:hover{
+    color: lightpink;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #000;
+}
+.nav-icon i:hover{
+    color: lightpink;
+}
+.main-home{
+    width: 100%;
+    padding: 5% 10%;
+    min-height: 500px;
+}
+.main-home{
+    width: 100%;
+height: 100vh;
+background-image: url(main\ page.jpg);
+background-size: cover;
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+align-items: center;
+}
+.main-text h5{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main-text h1{
+    color: silver;
+    font-size: 65px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+    min-width: 780px;
+}
+.main-text p{
+    color: black;
+    font-size: 20px;
+    font-style:italic;
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+    border: 2px solid black;
+    padding: 12px 25px;
+}
+.main-btn:hover{
+    background-color: silver;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.center-text{
+    min-width: 854px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.rate{
+    padding: 5px 5px;
+}
+.dress-code{
+    padding: 5px 5px;
+}
+.price{
+    padding: 5px 5px;
+}
+.products{
+    margin: 50px 50px;
+}
+.products2{
+    margin: 50px 50px;
+} 
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.row{
+    position: relative;
+}
+.row img{
+    width:100%;
+    height: 80%;
+    min-width: 164px;
+    min-height: 249px;
+}
+.products2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgb(78, 169, 78);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: red;
+}
+.rate i{
+    color: rgba(255, 166, 0, 0.666);
+    font-size: 18px;
+}
+.dress-code p{
+font-weight: 600;
+}
+.price{
+    font-weight: 600;
+}
+.best{
+    width: 100%;
+}
+.best-text{
+    font-size: 25px;
+    flex: 1;
+    padding: 20px 20px;
+}
+.best products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 20px 20px;
+    gap: 50px;
+}
+.best img{
+    flex: 1;
+    width:130px;
+    height: 100px;
+}
+.contact{
+    width: 100%;
+    height: 60vh;
+    background-color: #000;
+    color: white;
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.contact h5{
+    margin-bottom: 5px;
+    padding: 5px 0px;
+}
+.contact li{
+    font-family: Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.grp{
+    flex: 2;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item-left {
+    padding: 10px;
+    flex: 5%;
+}
+.flex-item-left{
+    padding: 10px;
+    flex: 5%;
+}
+.flex-item-left {
+    padding: 10px;
+    flex: 5%;
+}
+.flex-item-left{
+    padding: 10px;
+    flex: 5%;
+}
+.Social{
+    display: flex;
+    flex-direction: column;
+}
+.fa-brands{
+    padding: 5px 5px;
+}
+footer{
+    position: relative;
+    top: 33%;
+    left: 40%;
+}
+.contact a{
+    color: aliceblue;
+    z-index: 2;
+}
+.contact a:hover{
+    border-bottom: 1px solid white;
+}
+.offcanvas {
+    height: 80%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(241, 154, 167);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: 5px solid white;
+    z-index: 10;
+  }
+  .offcanvas-content {
+    color: rgb(17, 4, 4);
+  }
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+  }
+  #openBtn {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: rgb(16, 1, 1);
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+  }
+  .offcanvas li{
+    padding: 5px;
+  }
+  .offcanvas h1{
+    position: relative;
+    left: 22px;
+  }
+  .offcanvas a:hover{
+     color: whitesmoke;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 1px;
+    top: 20px;
+    background-color: lightpink;
+    border: 1px solid white;
+    min-width: 100%;
+    box-shadow: 0px 16px 16px 0px rgba(219, 29, 29, 0.2);
+    padding: 12px 16px;
+    color: black;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content p{
+    padding: 5px;
+  }
+  .dropdown-content i{
+   color: black !important;
+  }
+  .dropdown-content p:hover{
+    color: white;
+  }
